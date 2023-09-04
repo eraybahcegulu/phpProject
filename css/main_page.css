@@ -1,6 +1,9 @@
-/* main_page.css */
 
-/* Navbar stil ayarları */
+
+body{
+    font-family: Nunito;
+}
+
 header {
     background-color: #345bdb;
     color: #fff;
@@ -10,23 +13,23 @@ header {
     align-items: center;
 }
 
-/* Profil butonu stil ayarları */
 .profil-buton {
-    background-color: #333;
-    color: #fff;
+    background-color: #c9abab;
+    color: #b92c2c;
     padding: 8px 20px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    font-size: 20px;
 }
 
-/* Profil butonunu sağ üste taşıma */
+
 header .profil-buton {
-    margin-right: 20px; /* Sağa bir mesafe bırakır */
-    margin-left: auto; /* Diğer tüm öğelerden sağa taşır */
+    margin-right: 20px;
+    margin-left: auto; 
 }
 
-/* Ana içerik stil ayarları */
+
 main {
     padding: 20px;
     background-color: #fff;
@@ -44,7 +47,7 @@ p {
     color: #555;
 }
 
-/* Footer stil ayarları */
+
 footer {
     background-color: #333;
     color: #fff;
@@ -52,7 +55,43 @@ footer {
     padding: 10px 0;
 }
 
-/* Footer metin stil ayarları */
+
 footer p {
     font-size: 14px;
+}
+
+
+.cikis-buton {
+    background-color: #ff0000;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none; 
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.cikis-buton:hover {
+    background-color: #cc0000;
+}
+
+
+.profil-buton {
+    background-color: #3498db;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px; 
+    display: flex;
+    align-items: center; 
+}
+
+.profil-buton i {
+    margin-right: 5px;
+}
+
+.profil-buton:hover {
+    background-color: #2980b9; 
 }

@@ -68,9 +68,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 <a style="text-decoration: none;" href="index.html"><p style="font-size: 40px; color:orange">KAYIT OL</p>
                 </a>
                 <br>
-                <input id="username" name="username" type="text" placeholder="Kullanıcı Adı">
+                <input id="username" name="username" type="text" placeholder="Kullanıcı Adı" maxlength="25">
                 <br>
-                <input type="password" id="password" name="password" placeholder="Şifre">
+                <input type="password" id="password" name="password" placeholder="Şifre" maxlength="25">
 
                 <button style="margin-top: 10px;"class="uye-ol-button">Üye Ol</button>
             </form>

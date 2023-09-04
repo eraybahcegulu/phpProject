@@ -8,6 +8,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     if (girisKontrol($kullanici_adi, $sifre)) {
         $_SESSION["kullanici_adi"] = $kullanici_adi;
+        $_SESSION["sifre"] = $sifre;
         header("Location: main_page.php");
         exit;
     } else {
@@ -37,12 +38,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <div class="login-container">
         <div class="form">
             <div class="login-form">
-                <form action="login.php" method="POST">
+                <form action="login.php" method="POST" onsubmit="return validateForm()">
                     <a style="text-decoration: none;" href="index.html"><p style="font-size: 40px; color:orange">GİRİŞ YAP</p></a>
-                    <input id="username" name="username" style="margin-top: 10px;" type="text" placeholder="Kullanıcı Adı">
-                    <input id="password" name="password" type="password" placeholder="Şifre">
+                    <input id="username" name="username" style="margin-top: 10px;" type="text" maxlength="25" placeholder="Kullanıcı Adı">
+                    <input id="password" name="password" type="password" maxlength="25" placeholder="Şifre">
                     <br>
-                    <button onclick="window.location.href = 'hesabım.html';" class="giris-yap-button">Giriş Yap</button>
+                    <button class="giris-yap-button">Giriş Yap</button>
                 </form>
                 <br>
                 <a style="color:black" href=""> Şifremi Unuttum</a>
@@ -58,5 +59,19 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             </div>
         </div>
     </div>
+
+    <script>
+        function validateForm() {
+            var username = document.getElementById("username").value;
+            var password = document.getElementById("password").value;
+            
+            if (username.length < 3 || password.length < 3) {
+                alert("Kullanıcı adı ve şifre en az 3 karakter olmalıdır!");
+                return false;
+            }
+            
+            return true;
+        }
+    </script>
 </body>
 </html>

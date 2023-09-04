@@ -21,7 +21,7 @@ body{
 .form{
     position: relative;
     background: white;
-    height: auto; /* Yüksekliği otomatik olarak ayarlayın */
+    height: auto;
     margin: auto;
     margin: auto;
     padding: 30px;
