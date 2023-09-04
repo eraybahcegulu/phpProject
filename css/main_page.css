@@ -1,59 +1,58 @@
+/* main_page.css */
 
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f5f5f5;
-            margin: 0;
-            padding: 0;
-        }
+/* Navbar stil ayarları */
+header {
+    background-color: #345bdb;
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
-        header {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 20px 0;
-        }
+/* Profil butonu stil ayarları */
+.profil-buton {
+    background-color: #333;
+    color: #fff;
+    padding: 8px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
 
-        nav ul {
-            list-style: none;
-            padding: 0;
-        }
+/* Profil butonunu sağ üste taşıma */
+header .profil-buton {
+    margin-right: 20px; /* Sağa bir mesafe bırakır */
+    margin-left: auto; /* Diğer tüm öğelerden sağa taşır */
+}
 
-        nav ul li {
-            display: inline;
-            margin-right: 20px;
-        }
+/* Ana içerik stil ayarları */
+main {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
 
-        nav ul li a {
-            text-decoration: none;
-            color: #fff;
-            font-weight: bold;
-        }
+h2 {
+    font-size: 24px;
+    color: #333;
+}
 
+p {
+    font-size: 18px;
+    color: #555;
+}
 
-        main {
-            max-width: 95%;
-            margin: 20px auto;
-            padding: 20px;
-            background-color: #fff;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
+/* Footer stil ayarları */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
 
-        footer {
-            text-align: center;
-            padding: 10px;
-            background-color: #333;
-            color: #fff;
-        }
-
-        a {
-            color: #007bff;
-            text-decoration: none;
-        }
-
-        a:hover {
-            text-decoration: underline;
-        }
-
-        .log-out-button{
-            float: left;
-        }
+/* Footer metin stil ayarları */
+footer p {
+    font-size: 14px;
+}

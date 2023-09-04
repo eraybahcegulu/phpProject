@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Nunito;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.login-container {
+    margin: auto;
+}
+
+.form {
+    position: relative;
+    background: white;
+    width: 500px;
+    height: auto; /* Yüksekliği otomatik olarak ayarlayın */
+    margin: auto;
+    padding: 30px;
+    text-align: center;
+    border: 3px solid orange;
+    border-radius: 2%;
+    box-sizing: border-box; /* Bu satırı ekleyin */
+}
+
+.form input {
+    outline: 1;
+    background: white;
+    width: 100%;
+    border: 1px solid orange;
+    border-radius: 10px;
+    margin: 0 0 20px;
+    padding: 20px;
+    box-sizing: border-box;
+    font-size: 14px;
+    text-align: center;
+}
+
+.giris-yap-button {
+    outline: 0;
+    background: orange;
+    width: 100%;
+    border: 1px solid orange;
+    border-radius: 10px;
+    padding: 15px;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.uye-ol-button {
+    outline: 0;
+    border: 1px solid gray;
+    border-radius: 10px;
+    background: gray;
+    width: 40%;
+    padding: 15px;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.giris-yap-button:hover {
+    transform: translateY(-3px);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.uye-ol-button:hover {
+    transform: translateY(-3px);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.hata-mesaji {
+    margin-top: 10px;
+    color: red;
+}
