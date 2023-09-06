@@ -1,8 +1,8 @@
 # phpProject
-# ALTER TABLE users AUTO_INCREMENT = 1;
-# ALTER TABLE users ADD id INT AUTO_INCREMENT PRIMARY KEY;
-# TRUNCATE TABLE users;
-# ALTER TABLE users DROP COLUMN id;
+ALTER TABLE users AUTO_INCREMENT = 1;
+ALTER TABLE users ADD id INT AUTO_INCREMENT PRIMARY KEY;
+TRUNCATE TABLE users;
+ALTER TABLE users DROP COLUMN id;
 
 ![Screenshot_1](https://github.com/eraybahcegulu/phpProject/assets/84785201/bc04af9c-e692-4c8d-818f-84b423cdfe71)
 
