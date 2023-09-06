@@ -20,13 +20,13 @@ body {
     position: relative;
     background: white;
     width: 500px;
-    height: auto; /* Yüksekliği otomatik olarak ayarlayın */
+    height: auto;
     margin: auto;
     padding: 30px;
     text-align: center;
     border: 3px solid orange;
     border-radius: 2%;
-    box-sizing: border-box; /* Bu satırı ekleyin */
+    box-sizing: border-box; 
 }
 
 .form input {

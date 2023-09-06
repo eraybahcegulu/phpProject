@@ -30,7 +30,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="css/login.css">
+    <link rel="stylesheet" type="text/css" href="login.css">
     <title>Login</title>
 
 </head>
@@ -40,8 +40,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <div class="login-form">
                 <form action="login.php" method="POST" onsubmit="return validateForm()">
                     <a style="text-decoration: none;" href="index.html"><p style="font-size: 40px; color:orange">GİRİŞ YAP</p></a>
-                    <input id="username" name="username" style="margin-top: 10px;" type="text" maxlength="25" placeholder="Kullanıcı Adı">
-                    <input id="password" name="password" type="password" maxlength="25" placeholder="Şifre">
+                    <input id="username" name="username" style="margin-top: 10px;" type="text" maxlength="25" placeholder="Kullanıcı Adı" oninput="onlyLettersAndNumbers(this)" >
+                    <input id="password" name="password" type="password" maxlength="25" placeholder="Şifre"oninput="onlyLettersAndNumbers(this)" >
                     <br>
                     <button class="giris-yap-button">Giriş Yap</button>
                 </form>
@@ -71,6 +71,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             }
             
             return true;
+        }
+    </script>
+
+<script>
+        function onlyLettersAndNumbers(input) {
+            input.value = input.value.replace(/[^a-zA-Z0-9]/g, '');
         }
     </script>
 </body>

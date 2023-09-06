@@ -56,7 +56,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/register.css">
+    <link rel="stylesheet" href="register.css">
 </head>
 <body>
     <div class="register-container">
@@ -68,9 +68,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 <a style="text-decoration: none;" href="index.html"><p style="font-size: 40px; color:orange">KAYIT OL</p>
                 </a>
                 <br>
-                <input id="username" name="username" type="text" placeholder="Kullanıcı Adı" maxlength="25">
+                <input id="username" name="username" type="text" placeholder="Kullanıcı Adı" maxlength="25" oninput="onlyLettersAndNumbers(this)">
                 <br>
-                <input type="password" id="password" name="password" placeholder="Şifre" maxlength="25">
+                <input type="password" id="password" name="password" placeholder="Şifre" maxlength="25" oninput="onlyLettersAndNumbers(this)">
 
                 <button style="margin-top: 10px;"class="uye-ol-button">Üye Ol</button>
             </form>
@@ -103,6 +103,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             }
             
             return true;
+        }
+    </script>
+
+<script>
+        function onlyLettersAndNumbers(input) {
+            input.value = input.value.replace(/[^a-zA-Z0-9]/g, '');
         }
     </script>
 </body>

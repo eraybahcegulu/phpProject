@@ -1,0 +1,76 @@
+body {
+    font-family: 'Nunito', sans-serif;
+    margin: 10px;
+    background-color: #cf7b7b;
+}
+
+.header {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+}
+
+
+.main-container {
+    display: flex;
+    flex-direction: column; 
+}
+
+.users-container,
+.form-container {
+    background-color: #fff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    margin-bottom: 10px; 
+    padding: 20px;
+}
+
+.profil-buton {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.profil-buton:hover {
+    background-color: #555;
+}
+
+
+.cikis-buton {
+    background-color: #e74c3c;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s; 
+}
+
+.cikis-buton:hover {
+    background-color: #ff6655; 
+}
+
+
+.cikis-buton {
+    background-color: #e74c3c;
+}
+
+
+h2 {
+    color: #333;
+}
+
+
+
+.alert-danger {
+    margin-top: 5px;
+    color : red;
+}
+
+.alert-success {
+    margin-top: 5px;
+    color: green;
+}
